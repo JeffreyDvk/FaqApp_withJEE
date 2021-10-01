@@ -1,0 +1,25 @@
+.claris{
+    text-align: center;
+    color: rgb(241, 240, 235);
+    font-size: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 0px;
+    font-weight: 600;
+    background: rgba(0,0,0,0.5);
+}
+#about > div > img{
+    width: 70%;
+    margin-left: 15%;
+    margin: 30px 15%;
+    
+}
+#about{
+    padding: 50px;
+    background: url("../img/test/3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color : white;
+    font-style: italic;
+}

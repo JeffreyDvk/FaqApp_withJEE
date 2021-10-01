@@ -1,0 +1,389 @@
+@font-face{
+	src : url("../police/Austhind.ttf");
+	font-family : "Austhind";
+}
+@font-face{
+	src : url("../police/Quicksand.ttf");
+	font-family : "Quicksand";
+}
+@font-face{
+	src : url("../police/Quicksand.ttf");
+	font-family : "Quicksand";
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+body{
+	font-family : "Quicksand";
+}
+#top-nav{
+    display: none;
+    position: fixed;
+    background-color: rgba(0,0,0,1);
+    width: 100%;
+    padding-top: 15px;
+    transition: 0.5s;
+    z-index: 10;
+}
+#top-nav a{
+    cursor: pointer;
+}
+#top-nav a i{
+    color : white;
+    font-size: 30px;
+    position: absolute;
+    right: 25px;
+    margin-top: 8px;
+}
+#top-nav h3 a {
+    font-family : "Austhind";
+    color : white;
+}
+
+
+#menu-bar{
+	width : 200px;
+    position : fixed;
+    height : inherit;
+	background-color : rgba(0,0,0,0.95);
+    transition: 0.5s;
+    backdrop-filter: blur(200px);
+    margin-left: 0px;
+    z-index: 999;
+}
+#menu-list{
+	margin-top : 30px;
+}
+#menu-bar a{
+	color : white;
+}
+#menu-list > a{
+	font-size : 16px;
+}
+#menu-list > a:hover,#menu-bar > h3 >a:hover{
+	color : #FF5733;
+	transition: 0.5s;
+}
+#menu-bar > h3{
+	margin-top : 20px;
+	font-family : "Austhind";
+}
+#social{
+	margin-top : 30px;
+	margin-left : 10px;
+}
+#social > a{
+	color : white;
+	padding: 0 10px;
+}
+.logo:hover > i{
+	color: #FF5733;
+	transition: 0.5s;
+}
+
+
+
+#main-content{
+    transition: 0.5s;
+    padding-left: 200px;
+    height: 100%;
+}
+#faq-content{
+    background: url("../img/test/14.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+}
+#faq-content > div{
+	width : 100%;
+    font-size : 14px;
+    color : white;
+    backdrop-filter: blur(40px);
+    height: inherit;
+    padding-bottom: 100px;
+}
+#faq-content > div > h2{
+    text-align: center;
+	padding-top : 75px;
+}
+#content{
+    display: flex;
+    margin-top : 40px;
+}
+.topic{
+    border-bottom: 1.5px solid rgba(0,0,0,0.3);
+}
+#questions-div{
+     width: 100%;
+}
+#questions-div > div{
+     width: 100%;
+}
+#questions-div >div>a:hover,.question:hover{
+    cursor:pointer;
+}
+#questions-div >div>a{
+    text-align: center;
+    font-size: 17px;
+}
+#questions-div >div>a>img{
+    width: 15px;
+}
+.question{
+    transition: 0.2s;
+}
+#questions-div >div>a,#questions-div >div > div > *,#answered > div > *{
+    display: block;
+    padding: 20px 40px;
+    color : white;
+    text-decoration: none;
+    width: 100%;
+}
+#questions-div >div > div > p,#answered > div > p{
+    padding-left : 50px;
+    display: none;
+}
+.question,#answered > div > a{
+    border-top: 1px solid rgba(0,0,0,0.3);
+    font-weight: 600;
+}
+.question:hover,#answered > div > a:hover{
+    border-left : 10px solid rgba(0,0,0,0.6);
+}
+#questions-div >div> div > p,#answered > div > p{
+    font-style: italic;
+}
+.question >i,#answered > div > a > i{
+    position :absolute;
+    right: 35px;
+}
+.question i,.question-r,.topic i{
+    transition: 0.7s;
+}
+#chatbox{
+    font-size : 17px;
+    margin: 50px 40px 0px 40px;
+    padding : 50px 0px;
+    border : 2px solid rgba(0,0,0,0.3);
+    border-radius: 10px;
+}
+#chatbox > form > label{
+    font-weight:bold;
+}
+.categories,.preocupation{
+    padding : 0px 10px;
+    margin : 10px 0px;
+}
+#qu,#em{
+    width : 55%;
+}
+.categories{
+    width : 55%;
+    height : 27px;
+}
+.preocupation{
+    width : 55%;
+    height: 150px;
+}
+#questions-div div div {
+    display : none;
+}
+
+#deconnection{
+    position: fixed;
+    margin-left : 39%;
+    margin-top: -40vh;
+    z-index: 1000;
+    padding: 10px 20px;
+    border : 2px solid rgba(0,0,0,0.3);
+    box-shadow: 3px 3px rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    backdrop-filter: blur(200px);
+    transition: 1s;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+}
+#deconnection p{
+    font-weight: 500;
+}
+#deconnection > div > a{
+    margin: 0px 50px;
+    text-decoration: none;
+    font-weight: 900;
+}
+.deco{
+    cursor: pointer;
+}
+
+
+
+
+/*-----------ADMIN PART-----------------------------------------*/
+#messages{
+    background-image: url("../img/17.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 100px;
+}
+#messages > div{
+    backdrop-filter: blur(5px);
+    height: 100%;
+    color: white;
+}
+#messages > div > h3{
+    padding-top: 100px;
+    padding-bottom : 50px;
+    text-align: center;
+    font-weight: 900;
+}
+#messages > div > div{
+    display: flex;
+    border: 2px solid rgba(255,255,255,0.3);
+    border-radius: 10px;
+    margin: 10px 50px 5px 50px;
+    padding: 10px 40px 5px 40px;
+}
+.right-side{
+    width : 65%;
+}
+.left-side{
+    padding-top: 10px;
+    padding-left: 20px;
+    width : 35%;
+}
+.left-side a{
+    margin: 10px 0px;
+}
+#ansbox{
+    padding-top: 130px;
+    position: fixed;
+    z-index: 2000;
+    width: 100%;
+    margin-left: -200px;
+    margin-top: -80%;
+    height: 100%;   
+    background-color :rgba(0, 0, 0, 0.5);
+    transition: 1s;
+    transition-timing-function: ease;
+}
+#ansbox,#ansbox > form > a{
+    font-weight : 900;
+}
+#cls{
+    position: absolute;
+    top : 70px;
+    right : 200px;
+    font-size : 30px;
+    cursor: pointer;
+}
+/*-------------------FAQ GEST ADMIN PART---------------------*/
+
+#gestBox{
+    background-image: url("../img/test/1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100vh;
+    padding-bottom: 100px;
+}
+#gestBox > div{
+    backdrop-filter: blur(5px);
+    color: white;
+    padding-bottom: 100px;
+    padding: 50px 50px;
+    height: 100%;
+
+}
+#gestBox > div > h3{
+    text-align: center;
+    padding: 20px 0px;
+}
+.all{
+    padding: 20px 0px;
+}
+.questions{
+    width: 100%;
+    border: 2px solid rgba(255,255,255,0.3);
+    border-radius: 10px;
+    padding:10px 0px 10px 40px;
+    margin-bottom: 10px;
+}
+.questions > div > *{
+    transition: 0.5s;
+}
+
+.questions > div > p{
+    display: none;
+}
+.info > a > i{
+    position: relative;
+    margin-left: 0px;
+}
+.info > p{
+    font-style: italic;
+    padding-top: 10px;
+    padding-left: 30px;
+}
+.clickIt{
+    cursor:pointer;
+}
+#action{
+    position: fixed;
+    width: 250px;
+    height: 200px;
+    top: -400px;
+    left: 45%;
+    border-radius: 10px;
+    background-color: rgba(0,0,0,0.8);
+    z-index: 2000 ;
+    transition: 1s;
+    padding: 10px 30px 0px 25px;
+}
+#action > p {
+    width: 200px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#action > p >a{
+    width: 100%;
+    font-weight: 900;
+}
+.opGest:hover{
+    cursor: pointer;
+}
+.closeIt{
+    position: absolute;
+    left : 49%;
+    top : 2px;
+    cursor : pointer;
+}
+
+/*-------------------RESPONSIVE PART-------------------------*/
+
+@media screen and (max-width: 860px) {
+    #top-nav{
+        display: flex;
+    }
+    #menu-bar {
+        margin-left: -200px;
+    }
+    #main-content{
+        padding-left: 0px;
+        padding-bottom: 50px;
+    }
+    #chatbox{
+        font-size : 17px;
+        margin: 50px 0px;
+        padding : 50px 0px;
+        border : 2px solid rgba(0,0,0,0.3);
+        border-radius: 10px;
+    }
+}

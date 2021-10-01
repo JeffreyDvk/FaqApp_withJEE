@@ -1,0 +1,42 @@
+/*.carousel-item{
+ 
+}*/
+.carousel-caption{
+    bottom: 50px;
+}
+.carousel-caption h5{
+    font-size: 60px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 25px;
+    font-weight: 900;
+}
+.carousel-caption h3{
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 800;
+    color: navajowhite;
+}
+.carousel-caption p{
+    font-size: 18px;
+    margin: auto;
+    width: 60%;
+    line-height: 1.9;
+}
+.carousel-caption a{
+    text-transform: uppercase;
+    background: rgb(192, 109, 8);
+    padding: 10px 30px;
+    display: inline-block;
+    color: #fff;
+    margin-top: 5%;
+    border-radius: 50px;
+}
+.carousel-control-prev{
+    background: transparent;
+    opacity: 0.1;
+}
+.carousel-control-next{
+    opacity: 0.1;
+    background: transparent;
+}
